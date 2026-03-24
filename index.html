@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derrick Lewis | Automation & Analytics</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --light: #e2e8f0;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .subtext {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      margin-bottom: 28px;
+      max-width: 580px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+
+    .btn:hover { background: var(--accent-dark); }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid #94a3b8;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 18px;
+      padding: 28px;
+      backdrop-filter: blur(6px);
+    }
+
+    .section {
+      padding: 70px 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--light);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .card p { color: var(--muted); }
+
+    .steps {
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      gap: 18px;
+    }
+
+    .step {
+      background: white;
+      border-left: 5px solid var(--accent);
+      padding: 20px 22px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+
+    .cta {
+      background: #eff6ff;
+      text-align: center;
+      border-top: 1px solid #dbeafe;
+      border-bottom: 1px solid #dbeafe;
+    }
+
+    .contact-box {
+      background: white;
+      max-width: 700px;
+      margin: 30px auto 0;
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid #dbeafe;
+      box-shadow: 0 8px 30px rgba(37, 99, 235, 0.08);
+    }
+
+    footer {
+      padding: 28px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p style="font-weight:bold; letter-spacing:1px; text-transform:uppercase; color:#93c5fd;">Automation + Analytics</p>
+        <h1>I help businesses eliminate manual work and save hours every week.</h1>
+        <p class="subtext">
+          Custom automations for payroll, invoicing, reporting, lead intake, and admin workflows — built for small businesses that are tired of doing everything by hand.
+        </p>
+        <a class="btn" href="#contact">Book a Free Workflow Audit</a>
+        <a class="btn btn-secondary" href="#services">See Services</a>
+      </div>
+      <div class="hero-card">
+        <h3>What I can automate</h3>
+        <ul>
+          <li>Timesheets to payroll workflows</li>
+          <li>Invoice creation and file processing</li>
+          <li>Email parsing and lead routing</li>
+          <li>Google Sheets and dashboard reporting</li>
+          <li>AI-assisted admin processes</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-intro">
+        I build practical automations that reduce repetitive work, improve accuracy, and help your team move faster without hiring more admin help.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Payroll Automation</h3>
+          <p>Turn raw time data into organized payroll-ready files with fewer manual edits and less back-and-forth.</p>
+        </div>
+        <div class="card">
+          <h3>Invoice Automation</h3>
+          <p>Automatically process spreadsheets, match records, and update invoice templates with cleaner, faster workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Lead & Email Automation</h3>
+          <p>Capture incoming emails, forms, or applications and send the right data where it needs to go automatically.</p>
+        </div>
+        <div class="card">
+          <h3>Reporting Dashboards</h3>
+          <p>Build simple dashboards and data views so you can actually see what is happening in your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f1f5f9;">
+    <div class="container">
+      <h2>How it works</h2>
+      <p class="section-intro">A simple process designed to get you from manual work to a working system quickly.</p>
+      <div class="steps">
+        <div class="step">
+          <strong>1. Free workflow audit</strong><br>
+          We identify the repetitive task that is wasting the most time in your business.
+        </div>
+        <div class="step">
+          <strong>2. Automation build</strong><br>
+          I design and build a custom workflow around your tools, files, and day-to-day process.
+        </div>
+        <div class="step">
+          <strong>3. Testing and handoff</strong><br>
+          We test the process together and make sure it is easy for you to use moving forward.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" id="contact">
+    <div class="container">
+      <h2>Ready to save time every week?</h2>
+      <p class="section-intro">
+        If your team is still doing payroll edits, invoice updates, spreadsheet cleanups, or email sorting by hand, let’s fix that.
+      </p>
+      <div class="contact-box">
+        <h3>Book your free workflow audit</h3>
+        <p>Email: yourname@email.com</p>
+        <p>Phone: (555) 555-5555</p>
+        <p>Or replace this section with your Calendly link, Google Form, or contact form.</p>
+        <a class="btn" href="mailto:yourname@email.com">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Derrick Lewis Automation & Analytics. All rights reserved.
+  </footer>
+</body>
+</html>
